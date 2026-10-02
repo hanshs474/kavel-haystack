@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kavel-haystack"
+version = "0.1.0"
+description = "Haystack component for Kavel AI image generation, usable with no API key"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Kavel" }]
+keywords = ["haystack", "ai", "image-generation", "text-to-image"]
+dependencies = ["haystack-ai>=2.0", "kavel>=0.2.0"]
+
+[project.urls]
+Homepage = "https://www.kavel.ai"
+Source = "https://github.com/hanshs474/kavel-haystack"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kavel_haystack"]
